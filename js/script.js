@@ -4,15 +4,23 @@ const rowElem = document.querySelector(".row");
 
 for (let i = 1; i <= 100; i++){
     let result = "";
-    if (i % 2 === 0){
-        result = "even";
-        // console.log(i, "even");
+    if (i % 3 == 0 && i % 5 == 0){
+        result = "fizzbuzz";
+        gridString += `<div class = "square ${result}">${result}</div>`
+    } else if (i % 3 == 0 && !(i % 5 == 0)) {
+        result = "fizz";
+        gridString += `<div class = "square ${result}">${result}</div>`
+    } else if (!(i % 3 == 0) && i % 5 == 0) {
+        result = "buzz";
+        gridString += `<div class = "square ${result}">${result}</div>`
     } else {
-        // console.log(i, "odd");
-        result = "odd";
+        result = i;
+        gridString += `<div class = "square">${i}</div>`
     }
 
-    gridString += `<div class = "square ${result}">${i}</div>`
+    console.log(result);
+
+    // gridString += `<div class = "square ${result}">${i}</div>`
 }
 
 rowElem.innerHTML = gridString;
