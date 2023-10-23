@@ -10,6 +10,8 @@
     padding: 0;
     box-sizing: border-box;
     background-color: lightslategray;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 10%, rgba(0,212,255,1) 20%, rgba(0,255,121,1) 30%, rgba(71,255,0,1) 40%, rgba(204,255,0,1) 50%, rgba(255,224,0,1) 60%, rgba(255,117,0,1) 70%, rgba(255,0,0,1) 80%, rgba(255,0,174,1) 90%, rgba(233,0,255,1) 100%); */
+
 }
 
 .row{
